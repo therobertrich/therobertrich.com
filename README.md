@@ -11,7 +11,7 @@ Personal CV site for Robert Richter. Plain HTML and CSS with one small script fo
 | `404.html` | Custom not-found page |
 | `style.css` | Styles (dark by default, light via toggle, print and forced-colors support) |
 | `theme.js` | Theme toggle; saves the choice in the browser's local storage |
-| `favicon.svg` | Site icon |
+| `favicon-32.png`, `icon-192.png`, `apple-touch-icon.png` | Site icons |
 | `robots.txt` | Opts out of AI crawlers |
 | `.htaccess` | HTTPS redirect, security headers (HSTS, CSP), 404 handling |
 | `.well-known/security.txt` | Security contact (expires 2027-10-20; renew annually) |
