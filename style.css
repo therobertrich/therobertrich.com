@@ -4,7 +4,7 @@
   --card: #1a2029;
   --text: #e6eaf0;
   --muted: #9aa6b5;
-  --accent: #6cb2f5;
+  --accent: #ff4d5f;
   --border: #2b3441;
 }
 :root[data-theme="light"] {
@@ -13,7 +13,7 @@
   --card: #ffffff;
   --text: #1c2430;
   --muted: #566274;
-  --accent: #0b5cad;
+  --accent: #b3122c;
   --border: #dde2e9;
 }
 .theme-toggle {
