@@ -1,11 +1,17 @@
-# Force HTTPS and bare domain
+# Force bare domain, then HTTPS on the host that was requested (keeps beta on beta)
 RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://therobertrich.com%{REQUEST_URI} [L,R=301]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^ https://therobertrich.com%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 Options -Indexes
+
+# Keep the beta site out of search results (both branches deploy this same file)
+SetEnvIfNoCase Host ^beta\. IS_BETA
+<IfModule mod_headers.c>
+  Header always set X-Robots-Tag "noindex, nofollow" env=IS_BETA
+</IfModule>
 
 <IfModule mod_headers.c>
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"

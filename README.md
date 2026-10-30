@@ -13,7 +13,7 @@ The site links to two related subdomains: `links.therobertrich.com` (link page, 
 | `404.html` | Custom not-found page |
 | `style.css` | Styles (dark by default, light via toggle, print and forced-colors support) |
 | `theme.js` | Theme toggle; saves the choice in the browser's local storage |
-| `env.js` | Shows elements marked `data-beta-only` on `beta.therobertrich.com` only |
+| `env.js` | On `beta.therobertrich.com`, shows elements marked `data-beta-only` and hides elements marked `data-prod-only` |
 | `external-links.js` | Asks for confirmation before opening links to other sites (links within `therobertrich.com` and its subdomains open directly) |
 | `favicon-32.png`, `icon-192.png`, `apple-touch-icon.png` | Site icons |
 | `bimi.svg` | Logo for BIMI email branding |
@@ -37,6 +37,7 @@ python -m http.server 8000
 Hostinger deploys each branch to its own subdomain, but keep the two branches' files identical so pull requests merge cleanly. For anything that should differ between the sites, check the hostname instead of the branch:
 
 - **Beta-only content:** add `data-beta-only hidden` to the element. `env.js` reveals it on the beta host, so it stays hidden in production. It is still in the page source, so never use this for anything private.
+- **Production-only content:** add `data-prod-only` to the element (no `hidden`). `env.js` hides it on the beta host, as with the footer's "Beta site" link.
 - **Beta-only server behavior:** use the `IS_BETA` variable set in `.htaccess`, as the `X-Robots-Tag: noindex` header does.
 
 Do not keep different files on each branch, for example with `.gitattributes merge=ours`. GitHub ignores custom merge drivers when it merges pull requests.
