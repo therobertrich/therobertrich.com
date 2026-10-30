@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Robert Richter | Cybersecurity Analyst</title>
-  <meta name="description" content="Robert Richter is a Cybersecurity Analyst in healthcare IT focused on email security, endpoint protection, and identity controls.">
+  <meta name="description" content="Robert Richter is a Cybersecurity Analyst in healthcare IT focused on incident response, email security, endpoint protection, and identity controls.">
   <meta name="color-scheme" content="dark light">
   <meta name="theme-color" content="#b3122c">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Robert Richter | Cybersecurity Analyst">
-  <meta property="og:description" content="Cybersecurity Analyst in healthcare IT: email security, endpoint protection, and identity controls.">
+  <meta property="og:description" content="Cybersecurity Analyst in healthcare IT: incident response, email security, endpoint protection, and identity controls.">
   <meta property="og:url" content="https://therobertrich.com/">
   <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
@@ -17,15 +17,17 @@
   <link rel="canonical" href="https://therobertrich.com/">
   <link rel="stylesheet" href="style.css">
   <script src="theme.js"></script>
+  <script src="env.js" defer></script>
   <script src="external-links.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
   <header>
+    <p class="beta-banner" data-beta-only hidden><strong>Beta preview.</strong> This version is still being reviewed. <a href="https://therobertrich.com/">Go to the live site</a>.</p>
     <button type="button" id="theme-toggle" class="theme-toggle" hidden>Switch to light mode</button>
     <h1>Robert Richter</h1>
-    <p class="tagline">Cybersecurity Analyst | Email Security, Endpoint Protection &amp; Identity | Healthcare IT</p>
+    <p class="tagline">Cybersecurity Analyst | Incident Response, Email Security, Endpoint Protection &amp; Identity | Healthcare IT</p>
     <ul class="contact">
       <li>Hamilton, OH</li>
       <li><a href="mailto:contact@therobertrich.com">contact@therobertrich.com</a></li>
@@ -47,7 +49,7 @@
   <main id="main" tabindex="-1">
     <section id="summary" aria-labelledby="summary-h">
       <h2 id="summary-h">Summary</h2>
-      <p>Cybersecurity Analyst with 5+ years of healthcare IT experience. I am a member of a two-person security team that protects 5,000+ endpoints and 20,000+ users. I administer CrowdStrike Falcon endpoint protection, Mimecast email security, and identity controls, including Duo, Microsoft Entra ID, multi-factor authentication (MFA), single sign-on (SSO), and conditional access. I led the email gateway cutover and the Duo-to-Microsoft Entra SSO cutover, and I lead incident response from investigation through post-incident review. My background in IT support, application administration, AV systems, and accessibility testing helps me roll out security controls that users can actually work with.</p>
+      <p>Cybersecurity Analyst with 5+ years of healthcare IT experience. I am a member of a lean security team that protects 5,000+ endpoints and 20,000+ users. I administer enterprise endpoint detection and response (EDR), email security, and identity controls, including Microsoft Entra ID, multi-factor authentication (MFA), single sign-on (SSO), and conditional access. I led the organization's email gateway migration and its SSO migration to Microsoft Entra ID, and I lead incident response from investigation through post-incident review. My background in IT support, application administration, AV systems, and accessibility testing helps me roll out security controls that users can actually work with.</p>
     </section>
 
     <section id="experience" aria-labelledby="experience-h">
@@ -57,28 +59,25 @@
         <h3>Cybersecurity Analyst</h3>
         <p class="meta">CommuniCare Health Services, Blue Ash, OH | October 2023 - Present</p>
         <ul>
-          <li>Serve on a two-person security team protecting 5,000+ endpoints and 20,000+ users across the company</li>
-          <li>Serve as AV specialist for office conference rooms and training centers, with a focus on supporting C-level executives</li>
-          <li>Manage CrowdStrike Falcon endpoint protection, monitoring alerts and responding to threats</li>
+          <li>Serve on a lean security team protecting 5,000+ endpoints and 20,000+ users across the company</li>
+          <li>Lead incident response for security incidents, working with management, legal, and third-party vendors from investigation through post-incident review</li>
+          <li>Manage an enterprise endpoint detection and response (EDR) platform, monitoring alerts and responding to threats</li>
           <li>Monitor enterprise email security and investigate phishing, malware, and other threats</li>
-          <li>Enable SIEM log collection from firewall and switch logs, Windows Active Directory, Microsoft 365 and Entra ID, Workday, wireless access points (WAPs), Veeam, and VMware ESXi</li>
-          <li>Led the email gateway cutover as lead technician</li>
-          <li>Led the Duo-to-Microsoft Entra SSO cutover as lead technician, including conditional access policies</li>
-          <li>Implemented Duo 2FA and stronger password requirements</li>
-          <li>Lead incident response for security breaches, working with management, legal, and third-party vendors from investigation through post-incident review</li>
+          <li>Enable SIEM log collection across network, identity, HR, backup, and virtualization systems</li>
+          <li>Led the email gateway migration as lead technician (see <a href="#projects">Key Projects</a>)</li>
+          <li>Led the SSO migration to Microsoft Entra ID as lead technician (see <a href="#projects">Key Projects</a>)</li>
+          <li>Rolled out two-factor authentication (2FA) and strengthened password policy</li>
           <li>Manage privileged access to reduce risk from elevated permissions</li>
-          <li>Perform vulnerability management and scanning with CrowdStrike Falcon Exposure Management</li>
-          <li>Patch systems through CrowdStrike Falcon IT Automation</li>
+          <li>Perform vulnerability scanning and automate patching across endpoints</li>
           <li>Run phishing simulations for users, including training follow-up</li>
-          <li>Administer Microsoft 365, including conditional access, data loss prevention (DLP) with Microsoft Purview, SharePoint Online and OneDrive, user groups, and SAML/SSO</li>
-          <li>Implement secure baselines for Microsoft Intune and Defender</li>
-          <li>Manage user accounts</li>
+          <li>Administer Microsoft 365, including user accounts and groups, conditional access, data loss prevention (DLP) with Microsoft Purview, SharePoint Online and OneDrive, and SAML/SSO</li>
+          <li>Implement the NIST Cybersecurity Framework (CSF) and Center for Internet Security (CIS) Benchmarks, along with secure baselines for Microsoft Intune and Defender</li>
+          <li>Implement SaaS security posture management (SSPM) across HR, IT service management, and collaboration platforms</li>
           <li>Script administrative and security tasks in PowerShell</li>
-          <li>Use generative AI tools, including Claude, Microsoft Copilot, and CrowdStrike Charlotte AI</li>
-          <li>Implement the NIST Cybersecurity Framework (CSF) and Center for Internet Security (CIS) Benchmarks</li>
-          <li>Implement Falcon Shield (formerly Adaptive Shield) to secure SaaS applications, including Workday, ServiceNow, Microsoft 365, Teams, Intune, and others</li>
-          <li>Create documentation for the helpdesk on security topics</li>
-          <li>Administer office door badge security and camera systems</li>
+          <li>Use generative AI tools, including Claude and Microsoft Copilot</li>
+          <li>Create documentation for the help desk on security topics</li>
+          <li>Serve as AV specialist for office conference rooms and training centers, with a focus on supporting C-level executives</li>
+          <li>Administer physical security systems, including badge access and video surveillance</li>
         </ul>
       </article>
 
@@ -86,9 +85,9 @@
         <h3>Application Administrator</h3>
         <p class="meta">CommuniCare Health Services, Blue Ash, OH | October 2022 - October 2023</p>
         <ul>
-          <li>Served as primary administrator and implementer of Nexthink, overseeing deployment and configuration, and trained the helpdesk team on the platform</li>
-          <li>Served as primary administrator for Zoom, including license management, Zoom Room configuration, and AV equipment; led rollout of a Team Chat solution to replace the existing messaging platform</li>
-          <li>Served as primary administrator and SME for nCompute/Stratodesk thin clients, including firmware upgrades and environment management</li>
+          <li>Served as primary administrator and implementer of Nexthink, overseeing deployment and configuration, and trained the help desk team on the platform</li>
+          <li>Served as primary administrator for Zoom, including license management, Zoom Room configuration, and AV equipment; led rollout of a team chat solution to replace the existing messaging platform</li>
+          <li>Served as primary administrator and subject matter expert (SME) for nCompute/Stratodesk thin clients, including firmware upgrades and environment management</li>
           <li>Provided VIP/white-glove executive support, resolving IT issues quickly to minimize disruption</li>
           <li>Managed deployment and monitoring of EMAR backup systems to maintain business continuity during network or power outages</li>
           <li>Provided priority support for acquisitions, integrating new businesses into existing IT infrastructure</li>
@@ -113,7 +112,7 @@
       </article>
 
       <article class="job">
-        <h3>Accessibility Intern (Internship)</h3>
+        <h3>Accessibility Intern</h3>
         <p class="meta">Miami University AccessMU Center, Oxford, OH | May 2019 - May 2021</p>
         <ul>
           <li>Performed automated and manual accessibility evaluations of websites, web apps, Windows and Mac desktop apps, and Android and iOS apps against WCAG 2.0 A/AA standards</li>
@@ -123,18 +122,11 @@
       </article>
 
       <article class="job">
-        <h3>IT Manager</h3>
-        <p class="meta">Raymond's Pizza, Liberty Township, OH | August 2019 - August 2021</p>
+        <h3>IT Manager and Shift Supervisor</h3>
+        <p class="meta">Raymond's Pizza, Liberty Township, OH | August 2017 - August 2021</p>
         <ul>
-          <li>Managed all IT operations for a restaurant business, including a migration to Google Workspace, cloud-based phone systems, new point-of-sale systems, and backup systems for outage coverage</li>
-        </ul>
-      </article>
-
-      <article class="job">
-        <h3>Shift Supervisor</h3>
-        <p class="meta">Raymond's Pizza, Liberty Township, OH | August 2017 - June 2021</p>
-        <ul>
-          <li>Trained staff on workflows and policy compliance; managed daily store operations and opening and closing procedures</li>
+          <li>IT Manager (August 2019 - August 2021): Managed all IT operations for a restaurant business, including a migration to Google Workspace, cloud-based phone systems, new point-of-sale systems, and backup systems for outage coverage</li>
+          <li>Shift Supervisor (August 2017 - June 2021): Trained staff on workflows and policy compliance; managed daily store operations and opening and closing procedures</li>
         </ul>
       </article>
     </section>
@@ -142,24 +134,24 @@
     <section id="projects" aria-labelledby="projects-h">
       <h2 id="projects-h">Key Projects</h2>
       <article class="job">
-        <h3>Email Gateway Cutover</h3>
+        <h3>Email Gateway Migration</h3>
         <p class="meta">CommuniCare Health Services</p>
         <ul>
-          <li>Lead technician for the email gateway cutover, covering 10,000+ mailboxes</li>
+          <li>Lead technician for the email security gateway migration, covering 10,000+ mailboxes</li>
         </ul>
       </article>
       <article class="job">
-        <h3>Duo-to-Microsoft Entra SSO Cutover</h3>
+        <h3>SSO Migration to Microsoft Entra ID</h3>
         <p class="meta">CommuniCare Health Services</p>
         <ul>
-          <li>Lead technician for the cutover from Duo to Microsoft Entra single sign-on, covering 7,000+ users, including conditional access policies</li>
+          <li>Lead technician for the migration to Microsoft Entra single sign-on, covering 7,000+ users, including conditional access policies</li>
         </ul>
       </article>
       <article class="job">
         <h3>SIEM Implementation</h3>
         <p class="meta">CommuniCare Health Services</p>
         <ul>
-          <li>Contributing technician for the security information and event management (SIEM) implementation, enabling log collection from firewall and switch logs, Windows Active Directory, Microsoft 365 and Entra ID, Workday, wireless access points (WAPs), Veeam, and VMware ESXi</li>
+          <li>Contributing technician for the security information and event management (SIEM) implementation, onboarding log sources across network, identity, HR, backup, and virtualization systems</li>
         </ul>
       </article>
     </section>
@@ -170,91 +162,97 @@
         <dt>Security Operations</dt>
         <dd>
           <ul class="tags">
-            <li>Incident response</li><li>Security breach investigation and containment</li><li>Post-incident analysis</li>
-            <li>SIEM implementation and log collection</li><li>Security alert monitoring</li>
-            <li>Endpoint detection and response (EDR)</li><li>Phishing and malware investigation</li><li>Phishing simulation</li>
+            <li>Incident response</li><li>Security incident investigation and containment</li><li>Post-incident analysis</li>
+            <li>SIEM implementation and log collection</li><li>Endpoint detection and response (EDR)</li><li>Endpoint protection</li>
+            <li>Security alert monitoring</li><li>Threat response</li><li>Phishing and malware investigation</li><li>Phishing simulation</li>
             <li>Vulnerability scanning and patching</li><li>Privileged access management</li><li>Security policy compliance</li>
-            <li>NIST CSF</li><li>CIS Benchmarks</li>
           </ul>
         </dd>
-        <dt>Identity and Access</dt>
+        <dt>Frameworks and Standards</dt>
         <dd>
           <ul class="tags">
-            <li>Multi-factor authentication (MFA)</li><li>Duo 2FA</li><li>Single sign-on (SSO)</li>
+            <li>NIST Cybersecurity Framework (CSF)</li><li>CIS Benchmarks</li>
+            <li>Secure baselines for Microsoft Intune, Defender, SharePoint Online, and OneDrive</li>
+            <li>SaaS application security (SSPM)</li>
+          </ul>
+        </dd>
+        <dt>Identity and Access Management</dt>
+        <dd>
+          <ul class="tags">
+            <li>Multi-factor authentication (MFA)</li><li>Two-factor authentication (2FA)</li><li>Single sign-on (SSO)</li><li>SAML</li>
             <li>Microsoft Entra ID</li><li>Conditional access policies</li><li>Password policy configuration</li>
-            <li>Identity security</li><li>Microsoft 365 administration</li><li>SharePoint Online and OneDrive DLP</li>
-            <li>Secure baselines</li>
+            <li>User account and group management</li><li>Identity security</li>
           </ul>
         </dd>
-        <dt>Email Security</dt>
+        <dt>Email Security and Data Protection</dt>
         <dd>
           <ul class="tags">
-            <li>Mimecast Email Security Cloud Gateway</li><li>Enterprise email security</li><li>Email security gateway administration</li>
-            <li>Email gateway cutover</li><li>Exchange Online</li><li>Phishing defense</li>
-            <li>Microsoft Purview email DLP</li>
+            <li>Enterprise email security</li><li>Secure email gateway administration</li><li>Email gateway migration</li>
+            <li>Exchange Online</li><li>Phishing defense</li>
+            <li>Data loss prevention (DLP) with Microsoft Purview for email, SharePoint Online, and OneDrive</li>
           </ul>
         </dd>
-        <dt>Security Platforms and Tools</dt>
+        <dt>Platforms and Tools</dt>
         <dd>
           <ul class="tags">
-            <li>CrowdStrike Falcon</li><li>Mimecast</li><li>Duo Security</li><li>Microsoft Entra ID</li>
-            <li>Nexthink</li><li>SIEM</li><li>Falcon Shield</li>
+            <li>Microsoft 365 administration</li><li>PowerShell scripting</li>
+            <li>Generative AI tools (Claude, Microsoft Copilot)</li><li>Nexthink</li>
           </ul>
         </dd>
         <dt>Endpoint and Device Management</dt>
         <dd>
           <ul class="tags">
-            <li>Microsoft Endpoint Configuration Manager (SCCM)</li><li>Mobile device management (MDM)</li>
-            <li>VMware AirWatch</li><li>Microsoft Intune and Defender</li><li>Windows 11</li><li>iOS</li>
-            <li>Thin clients (nCompute, Stratodesk)</li><li>Firmware upgrades</li><li>ChromeOS and Chromebooks</li>
-            <li>Hardware repair and Dell warranty coordination</li><li>Printer and copier setup</li>
+            <li>SCCM imaging, software deployment, and endpoint maintenance</li>
+            <li>Mobile device management (MDM) with VMware AirWatch</li><li>Windows 11</li><li>iOS</li>
+            <li>ChromeOS and Chromebooks for clinical use</li><li>Thin client administration (nCompute, Stratodesk)</li>
+            <li>Firmware upgrades</li><li>Hardware repair and Dell warranty coordination</li><li>Printer and copier setup and support</li>
           </ul>
         </dd>
-        <dt>Collaboration, Conference Room, and AV</dt>
+        <dt>Collaboration and AV Systems</dt>
         <dd>
           <ul class="tags">
-            <li>Zoom administration</li><li>Zoom Room configuration</li><li>Zoom license management</li>
-            <li>AV systems for conference rooms and training centers</li><li>Team chat platform rollout</li>
-          </ul>
-        </dd>
-        <dt>Business Continuity</dt>
-        <dd>
-          <ul class="tags">
-            <li>EMAR backup systems</li><li>Continuity planning for network and power outages</li>
+            <li>Zoom administration</li><li>Zoom Room configuration</li><li>License management and reconciliation</li>
+            <li>Team chat platform rollout</li><li>AV systems for office conference rooms and training centers</li>
           </ul>
         </dd>
         <dt>IT Support and Service</dt>
         <dd>
           <ul class="tags">
-            <li>Helpdesk and desktop support</li><li>VIP and white-glove executive support</li>
-            <li>Help desk training</li><li>ServiceNow ticketing and knowledge base</li><li>Acquisition IT integration</li>
+            <li>Help desk and desktop support (in-person, remote, phone, and on-call)</li><li>VIP and white-glove executive support</li>
+            <li>End-user troubleshooting</li><li>Help desk training</li><li>Scripted tools to improve help desk efficiency</li>
+            <li>ServiceNow ticketing and knowledge base</li><li>Acquisition IT integration</li><li>Google Workspace migration</li>
+            <li>Cloud-based phone systems</li><li>Point-of-sale (POS) systems</li>
           </ul>
         </dd>
-        <dt>Business Systems</dt>
+        <dt>Business Continuity</dt>
         <dd>
           <ul class="tags">
-            <li>Google Workspace migration</li><li>Cloud-based phone systems</li><li>Point-of-sale (POS) systems</li>
+            <li>EMAR backup systems, including deployment, monitoring, and alerting</li>
+            <li>Continuity planning for network and power outages</li>
           </ul>
         </dd>
-        <dt>Accessibility Testing</dt>
+        <dt>Accessibility and Usability Testing</dt>
         <dd>
           <ul class="tags">
-            <li>WCAG 2.0 A/AA compliance testing</li><li>JAWS</li><li>NVDA</li><li>VoiceOver</li><li>TalkBack</li>
-            <li>Dragon NaturallySpeaking</li><li>Voice control usability testing</li><li>Technical recommendation reports</li>
+            <li>WCAG 2.0 A/AA compliance testing</li><li>Automated and manual accessibility evaluation</li>
+            <li>JAWS</li><li>NVDA</li><li>TalkBack</li><li>VoiceOver</li><li>Dragon NaturallySpeaking</li>
+            <li>Voice control usability testing</li><li>Technical recommendation reports and quality assurance</li>
           </ul>
         </dd>
         <dt>Leadership and Project Management</dt>
         <dd>
           <ul class="tags">
-            <li>Cutover project leadership</li><li>Cross-functional stakeholder coordination</li>
-            <li>Staff training and onboarding</li><li>Agile project management</li><li>Workflow and policy compliance</li>
+            <li>Migration project leadership</li><li>Cross-functional collaboration</li>
+            <li>Stakeholder coordination (management, legal, vendors)</li><li>Staff training and onboarding</li>
+            <li>Workflow and policy compliance</li><li>Shift supervision</li>
+            <li>Agile project management and IT management (coursework)</li>
           </ul>
         </dd>
         <dt>Technical Foundations</dt>
         <dd>
           <ul class="tags">
-            <li>Networking</li><li>Server management</li><li>Web development (coursework)</li>
-            <li>Network cabling (CAT6) and switch installation</li>
+            <li>Networking, server management, and web development (coursework)</li>
+            <li>CAT6 network cabling</li><li>Network switch installation</li>
           </ul>
         </dd>
       </dl>
@@ -275,9 +273,9 @@
 
     <section id="education" aria-labelledby="education-h">
       <h2 id="education-h">Education</h2>
-      <p><strong>Bachelor of Science, Information Technology</strong><br>Miami University, Oxford, OH | August 2017 - May 2021 | Dean's List</p>
-      <p><strong>Associate of Applied Science, Computer and Information Technology</strong><br>Miami University, Hamilton, Ohio | August 2017 - May 2019</p>
-      <p><strong>High School Diploma</strong><br>Ohio Connections Academy | 2010 - 2017</p>
+      <p><strong>Bachelor of Science, Information Technology</strong><br>Miami University, Oxford, OH | 2021 | Dean's List</p>
+      <p><strong>Associate of Applied Science, Computer and Information Technology</strong><br>Miami University, Hamilton, OH | 2019</p>
+      <p><strong>High School Diploma</strong><br>Ohio Connections Academy | 2017</p>
     </section>
 
     <section id="volunteering" aria-labelledby="volunteering-h">
@@ -291,18 +289,18 @@
         </ul>
       </article>
       <article class="job">
-        <h3>Knights of Columbus - Member, District Deputy, Past Grand Knight, Faithful Navigator</h3>
-        <p class="meta">2018 - Present</p>
+        <h3>District Deputy, Faithful Navigator, and Past Grand Knight</h3>
+        <p class="meta">Knights of Columbus | 2018 - Present</p>
         <ul>
-          <li>District Deputy (2025–2027): Provide leadership and oversight for six local councils representing more than 900 members, supporting organizational effectiveness, membership engagement, and council operations.</li>
-          <li>Faithful Navigator (2025–2027): Lead assembly operations and coordinate patriotic initiatives and veterans support activities, fostering member engagement and strengthening community relationships.</li>
-          <li>Grand Knight (2022–2024): Led a local council, overseeing its operations, coordinating member activities, and supporting charitable and community outreach initiatives.</li>
-          <li>Fundraising & Community Impact: Co-chaired a fundraising initiative that generated more than $4,000 for school scholarships.</li>
+          <li>District Deputy (2025 - Present): Oversee six local councils with more than 900 members, supporting council operations and membership engagement</li>
+          <li>Faithful Navigator (2025 - Present): Lead assembly operations, patriotic initiatives, and veterans support activities</li>
+          <li>Grand Knight (2022 - 2024): Led a local council's operations, member activities, and charitable and community outreach</li>
+          <li>Co-chaired a fundraiser that raised more than $4,000 for school scholarships</li>
         </ul>
       </article>
       <article class="job">
-        <h3>Glenmary Home Missioners - Maintenance Volunteer</h3>
-        <p class="meta">Fairfield, OH | 2019 - 2021</p>
+        <h3>Maintenance Volunteer</h3>
+        <p class="meta">Glenmary Home Missioners, Fairfield, OH | 2019 - 2021</p>
         <ul>
           <li>Installed CAT6 cabling and network switches</li>
         </ul>
@@ -311,8 +309,7 @@
   </main>
 
   <footer>
-    <p>References available upon request.</p>
-    <p><a href="accessibility.html">Accessibility</a> &middot; <a href="privacy.html">Privacy policy</a> &middot; <a href="https://beta.therobertrich.com">Beta site</a> &middot; &copy; 2026 Robert Richter</p>
+    <p><a href="accessibility.html">Accessibility</a> &middot; <a href="privacy.html">Privacy policy</a> &middot; <span data-prod-only><a href="https://beta.therobertrich.com">Beta site</a> &middot; </span>&copy; 2026 Robert Richter</p>
   </footer>
 </body>
 </html>
