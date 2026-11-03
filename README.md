@@ -1,6 +1,6 @@
 # therobertrich.com
 
-Personal CV site for Robert Richter. Plain HTML and CSS with three small scripts: a light/dark toggle, an external-link confirmation, and a beta-only content switch. No build step, frameworks, cookies, or analytics.
+Personal CV site for Robert Richter. Plain HTML and CSS with three small scripts: a light/dark toggle, an external-link confirmation, and a beta-only content switch. No build step or frameworks. Google Analytics 4 (Google tag) loads on every page; see `privacy.html`.
 
 The site links to two related subdomains: `links.therobertrich.com` (link page, in the header) and `beta.therobertrich.com` (preview site, in the footer).
 
@@ -50,7 +50,11 @@ This repo is public, so keep employer-specific details off the site and out of c
 
 Hosted on Hostinger and served through Cloudflare. Upload the contents of this repo to `public_html`, including the hidden `.htaccess` and `.well-known` folder.
 
-The CSP in `.htaccess` only allows scripts and styles from the site itself. Loosen it before adding analytics, fonts, or other third-party resources.
+The CSP in `.htaccess` allows scripts and styles from the site itself, plus the Google tag (`googletagmanager.com`, `google-analytics.com`). The inline gtag snippet is allowed by its SHA-256 hash. If you change that snippet, recompute the hash and update the `script-src` in `.htaccess`. Loosen the CSP further before adding fonts or other third-party resources.
+
+## Search engines
+
+The domain is verified in Google Search Console and Bing Webmaster Tools. Submit `https://therobertrich.com/sitemap.xml` in both. The verification tags or files they issued are not in this repo; they live in each console. If you re-verify or switch accounts, record that here.
 
 ## Standards
 
