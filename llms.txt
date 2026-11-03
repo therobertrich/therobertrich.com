@@ -1,0 +1,44 @@
+# Robert Richter
+
+> Robert Richter is a Cybersecurity Analyst in healthcare IT based in Hamilton, Ohio. His work focuses on incident response, email security, endpoint protection, and identity controls, with five-plus years of healthcare IT experience.
+
+This site is a plain HTML personal CV. It has no cookies, analytics, or forms. The full CV is on the home page; the other pages cover accessibility and privacy.
+
+## Profile
+
+- [Home page / CV](https://therobertrich.com/): Summary, experience, key projects, skills, certifications, education, and volunteering.
+- [Accessibility statement](https://therobertrich.com/accessibility.html): The site's WCAG 2.2 Level AA target and how to report a barrier.
+- [Privacy policy](https://therobertrich.com/privacy.html): What the site does and does not collect.
+
+## Experience
+
+- Cybersecurity Analyst, CommuniCare Health Services (October 2023 to present): Serves on a lean security team. Leads incident response, manages an enterprise endpoint detection and response (EDR) platform, monitors email security, administers Microsoft 365 and identity controls, and runs phishing simulations.
+- Application Administrator, CommuniCare Health Services (October 2022 to October 2023): Administered enterprise collaboration, thin-client, backup, and ticketing platforms and supported executive IT.
+- Desktop Support Technician, CommuniCare Health Services (June 2021 to October 2022): Managed endpoint imaging and software deployment, mobile device management, and hardware repair.
+- Accessibility Intern, Miami University AccessMU Center (May 2019 to May 2021): Ran WCAG 2.0 A/AA accessibility evaluations of websites and apps, plus usability tests with screen readers and voice-control tools.
+- IT Manager and Shift Supervisor, Raymond's Pizza (August 2017 to August 2021): Managed all IT operations, including a move to Google Workspace and cloud phone systems.
+
+## Key Projects
+
+- [Key projects section](https://therobertrich.com/#projects): Led technical work on an email security gateway migration, a single sign-on migration to Microsoft Entra ID, and a SIEM log-collection implementation.
+
+## Skills and Certifications
+
+- [Skills section](https://therobertrich.com/#skills): Security operations, identity and access management, email security and data protection, frameworks (NIST CSF, CIS Benchmarks), PowerShell scripting, and accessibility testing.
+- [Certifications section](https://therobertrich.com/#certifications): Certified in Cybersecurity (CC) from ISC2 (May 2024), plus vendor and university credentials.
+
+## Education
+
+- [Education section](https://therobertrich.com/#education): B.S. in Information Technology (Miami University, 2021); A.A.S. in Computer and Information Technology (Miami University Hamilton, 2019).
+
+## Contact and Links
+
+- [Contact email](mailto:contact@therobertrich.com): Best way to reach Robert.
+- [LinkedIn](https://www.linkedin.com/in/therobertrich): Professional profile.
+- [GitHub](https://github.com/therobertrich): Code and projects.
+- [Links page](https://links.therobertrich.com): Other links.
+- [Security contact](https://therobertrich.com/.well-known/security.txt): Vulnerability reporting contact.
+
+## Optional
+
+- [robots.txt](https://therobertrich.com/robots.txt): Crawler access rules for this site.
