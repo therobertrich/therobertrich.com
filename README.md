@@ -17,9 +17,11 @@ The site links to two related subdomains: `links.therobertrich.com` (link page, 
 | `external-links.js` | Asks for confirmation before opening links to other sites (links within `therobertrich.com` and its subdomains open directly) |
 | `favicon-32.png`, `icon-192.png`, `apple-touch-icon.png` | Site icons |
 | `bimi.svg` | Logo for BIMI email branding |
-| `robots.txt` | Opts out of AI crawlers |
+| `robots.txt` | Allows all crawlers and points to the sitemap |
+| `sitemap.xml` | Lists the public HTML pages (home, accessibility, privacy); add new pages here |
+| `llms.txt` | Plain-text summary of the site for LLMs (CV, sections, contact links) |
 | `.htaccess` | HTTPS redirect, security headers (HSTS, CSP), noindex on the beta host, 404 handling |
-| `.well-known/security.txt` | Security contact (expires 2027-10-20; renew annually) |
+| `.well-known/security.txt` | Security contact (expires 2027-11-01, no more than one year after publishing; renew before it expires) |
 
 ## Preview locally
 
