@@ -19,7 +19,7 @@ SetEnvIfNoCase Host ^beta\. IS_BETA
   Header always set X-Frame-Options "DENY"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
-  Header always set Content-Security-Policy "default-src 'none'; script-src 'self' 'sha256-enM37qnBch2GPCaVvr9hpfmLgOaRBEqaKln5AzxT4fE=' 'sha256-zHyWgouC06/kATh4cqXUJtrUs45ib5qhF6VHuPprs48=' 'sha256-1A8NqzpKswN2tCHHOVs7O2S8AXby/ju09Nv8AZn932w=' https://www.googletagmanager.com; connect-src https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; img-src 'self' https://*.google-analytics.com https://*.googletagmanager.com; style-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+  Header always set Content-Security-Policy "default-src 'none'; script-src 'self' 'sha256-enM37qnBch2GPCaVvr9hpfmLgOaRBEqaKln5AzxT4fE=' 'sha256-zHyWgouC06/kATh4cqXUJtrUs45ib5qhF6VHuPprs48=' 'sha256-EIB6HzzCM7yuZiXW0ZQP7o7eR9AUdhJ80m68dO5SP4Y=' 'sha256-1A8NqzpKswN2tCHHOVs7O2S8AXby/ju09Nv8AZn932w=' https://www.googletagmanager.com; connect-src https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; img-src 'self' https://*.google-analytics.com https://*.googletagmanager.com; style-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
 </IfModule>
 
 ErrorDocument 404 /404.html
